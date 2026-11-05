@@ -471,6 +471,7 @@
         ],
         "app_disable_fb_activity": [
             "com.whatsapp.camera.CameraActivity",
+            "com.whatsapp.camera.ui.CameraActivity",
             "com.whatsapp.qrcode.contactqr.ContactQrActivity",
             "com.whatsapp.statuscomposer.ConsolidatedStatusComposerActivity",
             "com.whatsapp.status.composer.ConsolidatedStatusComposerActivity"
