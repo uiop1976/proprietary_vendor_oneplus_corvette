@@ -1333,6 +1333,7 @@ PRODUCT_PACKAGES += \
     com.qualcomm.mcx.nonlinearmapper \
     com.qualcomm.mcx.policy.mfl \
     com.qualcomm.qti.mcx.usecase.extension \
+    audio.bluetooth_qti.default \
     camera.qcom.sm8650 \
     camera.qcom \
     com.qti.chi.offline \
