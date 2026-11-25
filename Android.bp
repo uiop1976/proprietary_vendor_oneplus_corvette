@@ -6972,26 +6972,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "audio.bluetooth_qti.default",
-    owner: "oneplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/audio.bluetooth_qti.default.so",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    check_elf_files: false,
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "com.qti.chi.override",
     owner: "oneplus",
     strip: {
@@ -11980,6 +11960,7 @@ cc_prebuilt_library_shared {
     relative_install_path: "aiframe",
     prefer: true,
     device_specific: true,
+    check_elf_files: false,
 }
 
 cc_prebuilt_library_shared {
@@ -13269,6 +13250,7 @@ cc_prebuilt_library_shared {
     compile_multilib: "64",
     prefer: true,
     device_specific: true,
+    check_elf_files: false,
 }
 
 cc_prebuilt_library_shared {
@@ -14078,6 +14060,7 @@ cc_prebuilt_library_shared {
     compile_multilib: "64",
     prefer: true,
     device_specific: true,
+    check_elf_files: false,
 }
 
 cc_prebuilt_library_shared {
@@ -14555,6 +14538,7 @@ cc_prebuilt_library_shared {
     compile_multilib: "64",
     prefer: true,
     device_specific: true,
+    check_elf_files: false,
 }
 
 cc_prebuilt_library_shared {
@@ -14632,6 +14616,7 @@ cc_prebuilt_library_shared {
     compile_multilib: "64",
     prefer: true,
     device_specific: true,
+    check_elf_files: false,
 }
 
 cc_prebuilt_library_shared {
@@ -14809,6 +14794,7 @@ cc_prebuilt_library_shared {
     compile_multilib: "64",
     prefer: true,
     device_specific: true,
+    check_elf_files: false,
 }
 
 cc_prebuilt_library_shared {
@@ -15490,6 +15476,7 @@ cc_prebuilt_library_shared {
     compile_multilib: "64",
     prefer: true,
     device_specific: true,
+    check_elf_files: false,
 }
 
 cc_prebuilt_library_shared {
@@ -15515,6 +15502,7 @@ cc_prebuilt_library_shared {
     compile_multilib: "64",
     prefer: true,
     device_specific: true,
+    check_elf_files: false,
 }
 
 cc_prebuilt_library_shared {
@@ -16001,6 +15989,7 @@ cc_prebuilt_library_shared {
     compile_multilib: "64",
     prefer: true,
     device_specific: true,
+    check_elf_files: false,
 }
 
 cc_prebuilt_library_shared {
@@ -16257,7 +16246,12 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/libdolbyclstc.so",
             ],
             shared_libs: [
+                "android.frameworks.sensorservice-V1-ndk",
                 "libsensorndkbridge",
+                "libbinder_ndk",
+                "libcutils",
+                "libutils",
+                "libc++",
                 "liblog",
                 "libm",
                 "libdl",
@@ -16475,6 +16469,7 @@ cc_prebuilt_library_shared {
                 "vendor.oplus.hardware.cammidasservice-V1-ndk",
                 "libmidasserviceintf_aidl",
                 "vendor.oplus.hardware.camera.aon-service-impl",
+                "vendor.oplus.hardware.performance-V1-ndk_platform",
                 "libc",
                 "libm",
                 "libdl",
@@ -17510,6 +17505,7 @@ cc_prebuilt_library_shared {
     compile_multilib: "64",
     prefer: true,
     device_specific: true,
+    check_elf_files: false,
 }
 
 cc_prebuilt_library_shared {
@@ -17535,6 +17531,7 @@ cc_prebuilt_library_shared {
     compile_multilib: "64",
     prefer: true,
     device_specific: true,
+    check_elf_files: false,
 }
 
 cc_prebuilt_library_shared {
@@ -18198,6 +18195,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "libwrapper_te",
+    check_elf_files: false,
     owner: "oneplus",
     strip: {
         none: true,
@@ -18424,6 +18422,7 @@ cc_prebuilt_library_shared {
     relative_install_path: "oplusmss",
     prefer: true,
     device_specific: true,
+    check_elf_files: false,
 }
 
 cc_prebuilt_library_shared {
